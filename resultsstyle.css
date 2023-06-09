@@ -1,0 +1,149 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    color:black;
+}
+/* the first div holds the elements of the project together*/
+#container{
+   margin-left:18vw;
+}
+#container div{
+float:left;
+
+}
+.agg-score-display{
+    background:linear-gradient(blue,purple);
+    opacity:100%;
+    position: relative;
+    height:45vh;
+    width:30vw;
+    display: block;
+    margin-left: auto ;
+    margin-right:auto;
+    margin-top:90px;
+    border-radius:5% 5%;
+    border-right:1.5px solid white;
+    z-index:2;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+
+}
+.round-score-holder{
+    border-radius: 50%;
+    height:5em;
+    width:5em;
+    border:1px solid purple;
+    margin:0 0 33px;
+    background:linear-gradient(purple,blue);
+  
+
+}
+.round-score-holder p{
+    font-size:2em;
+    display: block;
+    margin-left:20px;
+    margin-right: auto;
+    margin-top:20px;
+    color:cyan;
+
+}
+.score-text{
+    display: block;
+    margin: 0;
+    color:white;
+}
+.student-message{
+    font-size:0.8em;
+    text-align:center;
+    color:whitesmoke;
+    margin-top:-39px;
+
+
+}
+.student-message span{
+    margin-bottom:-8px;
+    display:block;
+    text-align: center!important;
+}
+#summary-section{
+    background-color:rgb(162, 10, 81);
+    opacity:80%;
+    height:45vh;
+    width:34vw;
+    display:block;
+    margin-left:-13px;
+    margin-right:auto;
+    margin-top:90px;
+    border-radius:0 5% 5% 0;
+    position:relative;
+    
+}
+.categories{
+    height: 0150px;
+    position: absolute;
+    width:80%;
+   
+   top:30%;
+   left:12%;
+   font-size:0.7em;
+   background-color: rgb(147, 115, 221);
+   border-radius:10px;
+   
+}
+.category-mark{
+    display:flex;
+    justify-content:space-between ;
+    width:70%;
+    margin:11px auto;
+    width:90%;
+    opacity: 80%;
+    padding:0;  
+    color:white;
+    border-radius:20px;
+    font-weight:bold;
+}
+p span{
+   
+    font-size:1.2em;
+    padding-left:2px;
+}
+.category-mark:first-of-type{
+    border:3px solid magenta;
+    background-color: magenta;
+
+}
+.category-mark:nth-of-type(2){
+    border:3px solid purple;
+    background-color: purple;
+}
+.category-mark:nth-of-type(3){
+    border:3px solid red;
+    background-color: red;
+}
+.category-mark:nth-of-type(4){
+    border:3px solid gold;
+    background-color: gold;
+    color:blue;
+}
+.header{
+    position: absolute;
+    left: 13%;
+    top:0;
+    margin-top:10px;
+    color:white;
+    font-size:2em;
+}
+span{
+    margin-top:2px;
+}
+
+@media (min-width:700px){
+    body{
+        background-color: black;
+    }
+}
